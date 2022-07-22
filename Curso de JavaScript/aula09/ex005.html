@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: #303942;
+            color: wheat;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando meus estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> no JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        // Selecionando por Marca
+            var corpo = window.document.body
+            var p1 = document.getElementsByTagName('p')[1]
+        
+            //InnerText pega o texto sem formatação
+            //InnerHTML pega o texto com as tags filhas
+
+        //Selecionando por ID
+        /*
+            var d = document.getElementById('msg')
+            d.style.background = 'Wheat'
+            d.style.color = 'black'
+        */
+        
+        //Selecionando por Seletor
+        var d = document.querySelector('div#msg') //Classe = . 
+        d.style.color = 'White' // Id = #
+        
+        //Selecionando por nome
+        /*
+        var d = document.getElementsByName('msg')[0]
+        d.innerText = 'Olá!'
+        */
+    </script>
+</body>
+</html>
